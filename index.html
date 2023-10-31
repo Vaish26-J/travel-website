@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <title>FlyAway</title>
+</head>
+
+<body>
+    <section id="home">
+        <nav class="nav">
+            <img src="assets/Logo.svg" class="logo" alt="FlyAway logo">
+            <div class="nav-links">
+                <ul>
+                    <a href="#destinations">
+                        <li>About</li>
+                    </a>
+                    <a href="#destinations">
+                        <li>Tours</li>
+                    </a>
+                    <a href="#">
+                        <li>Contact</li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+        <h1>Welcome Aboard!</h1>
+        <h2>"Where Adventure Begins and Memories Take Flight."</h2>
+        <img src="assets/Group.svg" class="bg-img" alt="famous buildings">
+    </section>
+
+    <section id="destinations">
+        <div class="about">
+            <p>At FlyAway Travel, we believe that every journey is an opportunity for adventure, discovery, and personal
+                transformation. Our mission is to empower you to explore the world and create unforgettable travel
+                experiences.</p>
+        </div>
+        <div class="locations">
+            <h2>Our popular destinations</h2>
+            <div class="row1">
+                <div class="dest seoul">
+                    <span class="trend">
+                        <p><img src="assets/trending-icon.png" alt="trending upward">Trending now</p>
+                    </span>
+                    <p class="hover"><span class="inner-hover">Seoul</span></p>
+                </div>
+                <div class="dest tokyo">
+                    <p class="hover"><span class="inner-hover">Tokyo</span></p>
+                </div>
+                <div class="dest mauri">
+                    <p class="hover"><span class="inner-hover">Mauritius</span></p>
+                </div>
+            </div>
+            <div class="row2">
+                <div class="dest simla">
+                    <p class="hover"><span class="inner-hover">Shimla</span></p>
+                </div>
+                <div class="dest cuba">
+                    <p class="hover"><span class="inner-hover">Cuba</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="review">
+        <h2>Look at what our customers say</h2>
+        <div class="review-container">
+            <div class="card">
+                <div class="comment">
+                    <img class="profile" src="assets/sarah.jpg" alt="Profile picture of Sarah">
+                    <h3>Sarah</h3>
+                    <p>"I cannot say enough good things about FlyAway! From the moment I contacted them to plan our
+                        family vacation, I felt like they truly understood our needs. They created an unforgettable trip
+                        that combined relaxation and adventure perfectly. Our kids had a blast, and my husband and I got
+                        the much-needed relaxation we craved. We will definitely use FlyAway for our future adventures!"
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="comment">
+                    <img class="profile" src="assets/john.jpg" alt="Profile picture of John">
+                    <h3>John</h3>
+                    <p>"FlyAway Travel made our honeymoon a dream come true. Their attention to detail and personalized
+                        service were outstanding. We didn't have to worry about a thing, and every aspect of our trip
+                        was flawlessly organized. We explored exotic locations, indulged in delicious cuisine, and
+                        created memories that will last a lifetime. Thank you, FlyAway!"</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="comment">
+                    <img class="profile" src="assets/Lisa.jpg" alt="Profile picture of Lisa">
+                    <h3>Lisa</h3>
+                    <p>"I've always been a bit skeptical of travel agencies, but FlyAway changed my perspective
+                        completely. They helped me plan a solo adventure to Southeast Asia, and I couldn't be happier.
+                        Their local insights and recommendations were invaluable. I felt safe and well-prepared for my
+                        journey. FlyAway's dedication to creating unique experiences is commendable."</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="comment">
+                    <img class="profile" src="assets/emma.jpg" alt="Profile picture of Emma">
+                    <h3>Emma</h3>
+                    <p>"My friends and I wanted to embark on a group adventure, and FlyAway was the perfect choice. They
+                        took care of every detail, from flights to accommodations and activities. The trip was a perfect
+                        blend of fun and culture. We even got to explore hidden gems we'd never have found on our own.
+                        We can't wait for our next group expedition with FlyAway!"</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="comment">
+                    <img class="profile" src="assets/Mark.jpg" alt="Profile picture of Mark">
+                    <h3>Mark</h3>
+                    <p>"FlyAway truly knows how to make your travel dreams a reality. They organized a romantic getaway
+                        for my husband and me to a beautiful European destination. The attention to detail, the seamless
+                        travel arrangements, and the delightful surprises along the way made this trip unforgettable.
+                        We're grateful for FlyAway's expertise and can't wait to plan our next adventure with them."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sign">
+        <div>
+            <img src="assets/Frame.svg" alt="travellers">
+        </div>
+
+        <div class="form">
+            <h3>Start your journey with us</h3>
+            <form action="/submit" method="POST">
+                <label for="name">Name</label><br>
+                <input type="text" id="name" name="name" placeholder="Enter your name"><br>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" placeholder="Enter your email address"><br>
+                <label for="number">Phone number</label><br>
+                <div class="input-group">
+                    <!-- <span class="prefix"><i class="fas fa-flag"></i> +91 <i class="fas fa-caret-down"></i></span> -->
+                    <span class="prefix">+91</span>
+                    <input type="tel" id="number" name="number" placeholder="Enter your phone number"><br>
+                </div>
+
+                <input type="submit">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="left">
+            <p>Copyright © 2023 by FlyAway. All Rights Reserved. </p>
+        </div>
+        <div class="right">
+            <p>Privacy Policy</p> |
+            <p>Terms & Conditions </p> | <p>Cancellation & Refund Policy</p>
+        </div>
+    </footer>
+</body>
+
+</html>
